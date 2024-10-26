@@ -34,14 +34,14 @@
     <header class="text-center py-4">
         <h1 class="text-blue-800 text-lg font-bold">CC102 | COMPUTER PROGRAMMING 1</h1>
         <h2 class="text-blue-800 text-3xl font-bold mt-2">MIDTERM MAJOR ASSESSMENT</h2>
-        <p class="text-red-600 mt-2 font-semibold text-lg">**IMPORTANT**: Access this site to get your activity. Only one submission is allowed per student.</p>
+        <p class="text-red-600 mt-2 font-semibold text-lg">**IMPORTANT**: Access this site to get your activity. Only one submission is allowed per student. DO NOT RELOAD THE WEBPAGE!</p>
     </header>
     <div><p class="text-gray-600 mt-2">Please fill out the form carefully and ensure all details are correct before submitting.</p></div>
     <div class="mt-8 w-full max-w-md">
         <form id="assessmentForm" class="space-y-4">
             <div class="flex flex-col space-y-2">
                 <label for="fullname" class="text-gray-700 font-bold">Full name:</label>
-                <input type="text" id="fullname" name="fullname" placeholder="Enter your Lastname, Firstname M." class="border border-blue-800 rounded px-4 py-2 w-full" required>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your Lastname, Firstname" class="border border-blue-800 rounded px-4 py-2 w-full" required>
             </div>
             <div class="flex flex-col space-y-2">
                 <label for="email" class="text-gray-700 font-bold">Email:</label>
@@ -93,7 +93,7 @@
             const emailPattern = /^[a-zA-Z0-9._%+-]+@hccci\.edu\.ph$/;
 
             if (!fullnamePattern.test(fullname)) {
-                alert("Full name format is incorrect. Please use: Lastname, Firstname M.");
+                alert("Full name format is incorrect. Please use: Lastname, Firstname");
                 return;
             }
 
